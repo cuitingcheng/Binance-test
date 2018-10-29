@@ -13,7 +13,7 @@ const Index = (props) => (
       </tr>
       {props.data.map((item) => (
         <Link href={`/trade?symbol=${item.symbol}`} key={item.symbol}>
-          <tr>
+          <tr style={{cursor: 'pointer'}}>
           {props.cols.map((col) =>
             <td key={col}>{item[col]}</td>
           )}
