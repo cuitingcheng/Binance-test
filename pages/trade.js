@@ -23,7 +23,9 @@ class Trade extends React.Component {
 
   render() {
     if (!this.symbol) {
-      return <p>No Symbol.</p>
+      return (
+        <p>No Symbol.</p>
+      )
     }
     return(
       <div>
